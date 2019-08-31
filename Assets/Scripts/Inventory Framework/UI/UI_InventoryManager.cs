@@ -7,6 +7,7 @@ using UnityEngine.EventSystems;
 
 namespace SA.InventoryFramework
 {
+
     public class UI_InventoryManager : MonoBehaviour
     {
         [SerializeField]
@@ -62,7 +63,7 @@ namespace SA.InventoryFramework
 
             for (int i = 0; i < results.Count; i++)
             {
-                currentSlot = results[i].gameObject.GetComponentInParent<UI_Slot>();//?
+                currentSlot = results[i].gameObject.GetComponentInParent<UI_Slot>();//raycastresult.gameobject:레이캐스트에 의해 히트된 게임 오브젝트
             }
 
             if (results.Count == 0)
@@ -100,5 +101,8 @@ namespace SA.InventoryFramework
             }
         }
     }
+
 }
+
+
 
